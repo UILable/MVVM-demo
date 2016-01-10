@@ -1,0 +1,27 @@
+//
+//  pch.pch
+//  Test
+//
+//  Created by admin on 16/1/9.
+//  Copyright © 2016年 AlezJi. All rights reserved.
+//
+
+#ifndef pch_pch
+#define pch_pch
+#import <UIKit/UIKit.h>
+
+
+#define Home_Url @"http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.song.userRecSongList&from=ios&bduss=25lQzlrTm5adDZ-V0lVa2t6SExNTnZIOWU3dk1wSTZNb3J0WnFkb0R-S0habGRWQVFBQUFBJCQAAAAAAAAAAAEAAADdUwg-uq52dna35wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIfZL1WH2S9VU&version=5.5.0"
+
+#define Hot_Singers @"http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.artist.getList&format=json&order=1&limit=12&offset=0&area=0&sex=0&abc="
+
+#define Singer_Group @"http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.artist.getList&format=json&order=1&limit=50&offset=%ld&area=%@&sex=%@&abc=%@"
+
+
+#define Singer_Url @"http://tingapi.ting.baidu.com/v1/restserver/ting?method=baidu.ting.artist.getList&format=json&order=1&limit=50"
+
+typedef void(^NetWorkingBlock)(BOOL isConnect);
+typedef void(^SuccessBlock)(id result);
+typedef void(^FailBlock)();
+typedef void(^ErrorBlock)(id error);
+#endif /* pch_pch */
